@@ -34,7 +34,6 @@ int main ()
                 if(!found && arr1[i]==arr2[j]){
                 vec.push_back(arr2[j]);
             }
-            
         }
     }
     cout<<"Intersecting elements are :";
