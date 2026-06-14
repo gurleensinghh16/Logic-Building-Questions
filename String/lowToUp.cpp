@@ -14,7 +14,6 @@ int main ()
         ch=toupper(ch);
         str[i]=ch;
       }
-      
       cout<<"The converted String is :"<<str<<endl;
     return 0;
 }
