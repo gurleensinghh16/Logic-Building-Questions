@@ -10,13 +10,11 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int k=-1;
     bool check=false;
     for(int i=0;i<arr[0].size();i++){
         int j=0;
-        k+=1;
         while(j<n){
-            if(arr[0][k]==arr[j][k]){
+            if(arr[0][i]==arr[j][i]){
                 j++;
                 check=true;
             }
@@ -26,7 +24,7 @@ int main(){
             }
         }
         if(check==true){
-            ans+=arr[0][k];
+            ans+=arr[0][i];
         }
         else{
             break;
