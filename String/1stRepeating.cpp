@@ -12,13 +12,13 @@ int main ()
                 count+=1;
             }
         }
-        if(count==1){
+        if(count>1){
             ans+=str[i];
         }
     }
     for(auto x: str){
         if(ans.find(x)!=string :: npos){
-            cout<<"The first Non repeating char is : "<<x<<endl;
+            cout<<"The first repeating char is : "<<x<<endl;
             break;
         }
     }
