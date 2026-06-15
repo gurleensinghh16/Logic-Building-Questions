@@ -8,7 +8,6 @@ int main ()
     getline(cin,str);
     int count=1;
     for(int i=0;i<str.size();i++){
-        
         if(str[i+1]==str[i]){
             count+=1;
         }

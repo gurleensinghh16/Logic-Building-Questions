@@ -16,7 +16,6 @@ int main ()
         }
         cout<<"Frequenncy of "<<str[i]<<" is :"<<count<<endl;
     }
-        
     }
     return 0;
 }
