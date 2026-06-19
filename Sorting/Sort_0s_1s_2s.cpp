@@ -36,8 +36,7 @@ int main ()
         arr[i]=2;
         i++;
     }
-
-
+    
     for(auto x : arr){
         cout<<x<<" ";
     }
