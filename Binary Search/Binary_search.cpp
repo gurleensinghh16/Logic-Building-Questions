@@ -2,41 +2,37 @@
 using namespace std;
 int main ()
 {
-    int n;
-    cout<<"Enter size of the array :";
+    int n,target;
+    cout<<"Enter size of the array : ";
     cin>>n;
     int arr[n];
-    cout<<"Enter elements inside array :";
+    cout<<"Enter elements isnide the aray : ";
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-
-    //Binary search
-    int low=0;
-    int high=n-1;
-    int mid=(low+high)/2;
-    int target;
-    cout<<"Enter the target element : ";
+    cout<<"Enter target element : ";
     cin>>target;
-
+    int low=0,high=n-1,mid;
     bool found=false;
+
     while(low<=high){
+        mid=(low+high)/2;
         if(arr[mid]==target){
-            cout<<"Element found at index : "<<mid<<endl;
             found=true;
             break;
         }
-        else if(target>arr[mid]){
-            low=mid+1;
-            mid=(low+high)/2;
-        }
-        else if(target<arr[mid]){
+        else if(arr[mid]>target){
             high=mid-1;
-            mid=(low+high)/2;
+        }
+        else{
+            low=mid+1;
         }
     }
     if(!found){
-        cout<<"Element does not exist inside array :"<<endl;
+        cout<<"Target Doesn't exist :"<<endl;
     }
+    else{
+        cout<<"Element found at index: "<<mid<<endl;
+    }   
     return 0;
 }
