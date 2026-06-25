@@ -16,6 +16,10 @@ int main ()
     bool found=false;
     int ans=INT_MAX;
     while(low<=high){
+        if(target==0){
+            cout<<"Insertion index is : "<<0<<endl;
+            break;
+        }
         mid=(low+high)/2;
         if(arr[mid]==target){
             ans=mid;
@@ -33,11 +37,11 @@ int main ()
             low=mid+1;
         }
     }
-    if(!found){
-        cout<<"Target Doesn't exist :"<<endl;
+    if(!found and target!=0){
+        cout<<"Insertion index is :"<<n<<endl;
     }
-    else{
-        cout<<"Ceil found: "<<ans<<endl;
+    else if(found){
+        cout<<"Insertion index is : "<<ans<<endl;
     }   
     return 0;
 }
