@@ -2,7 +2,7 @@
 using namespace std;
 int fac=1;
 void fact(int n){
-    if(n==1) return ;
+    if(n==1 || 0) return ;
     fac*=n;
     fact(n-1);
 }
