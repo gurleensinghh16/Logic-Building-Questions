@@ -3,7 +3,7 @@ using namespace std;
 void print(int arr[],int n,int i=0){
  if(i==n) return;
  cout<<arr[i]<<" ";
- print(arr,n,i+=1);
+ print(arr,n,i+1);
 }
 int main ()
 {
