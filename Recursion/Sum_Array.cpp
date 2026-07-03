@@ -17,6 +17,7 @@ int main ()
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
+    cout<<"Sum of array is : ";
     print(arr,n);
     cout<<endl;
     return 0;
