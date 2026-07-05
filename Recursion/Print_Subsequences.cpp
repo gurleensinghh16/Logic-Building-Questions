@@ -11,7 +11,6 @@ void subsequence(int arr[], int n, int index, vector<int> &current)
         cout << endl;
         return;
     }
-
     // Choice 1 : Take the current element
     current.push_back(arr[index]);
     subsequence(arr, n, index + 1, current);
