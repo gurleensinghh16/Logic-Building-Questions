@@ -1,12 +1,15 @@
 #include <iostream>
+#include <map>
 using namespace std;
+
 int main ()
 {
     int n,low=INT_MAX;
+    bool found=false;
     cout<<"Enter size of the array : ";
     cin>>n;
     int arr[n];
-    unordered_map <int,int> mp;
+    map <int,int> mp;
     cout<<"Enter elements inside the array : ";
     for(int i=0;i<n;i++){
         cin>>arr[i];
@@ -15,9 +18,15 @@ int main ()
     for(int i=0;i<n;i++){
         mp[arr[i]]++;
     }
-    cout<<"Left array is : ";
     for(auto x : mp){
-        cout<<x.first<<" ";
+        if(x.second==1){
+            found=true;
+            cout<<"Fist Non Repeating elt is : "<<x.first;
+            break;
+        }
+    }
+    if(!found){
+        cout<<"Doesnot exist : ";
     }
     cout<<endl;
     return 0;
