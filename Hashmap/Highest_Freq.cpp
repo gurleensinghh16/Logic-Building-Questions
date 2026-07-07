@@ -2,7 +2,7 @@
 using namespace std;
 int main ()
 {
-    int n,high=0,elt;
+    int n,high=0;
     cout<<"Enter size of the array : ";
     cin>>n;
     int arr[n];
@@ -17,12 +17,11 @@ int main ()
     }
     // Printing elemnets inside Hashmap:
     for(auto x : mp){
-        if(x.second>high){
-            high=x.second;
-            elt=x.first;
+        if(mp[x.first]>high){
+            high=x.first;
         }
         cout<<x.first<<" -> "<<x.second<<endl;
     }
-    cout<<"Highest frequency elt is : "<<elt<<endl;
+    cout<<"Highest frequency elt is : "<<high<<endl;
     return 0;
 }
