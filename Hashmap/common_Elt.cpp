@@ -19,13 +19,13 @@ int main ()
         cin>>arr1[i];
     }
     // Inserting elements inside 2st array :
-    cout<<"Enter elements in 1st array : ";
-    for(int i=0;i<n1;i++){
+    cout<<"Enter elements in 2nd array : ";
+    for(int i=0;i<n2;i++){
         cin>>arr2[i];
     }
     // Inserting elements inside 3st array :
-    cout<<"Enter elements in 1st array : ";
-    for(int i=0;i<n1;i++){
+    cout<<"Enter elements in 3rd array : ";
+    for(int i=0;i<n3;i++){
         cin>>arr3[i];
     }
     // Inserting elements inside 1st Hashmap :
