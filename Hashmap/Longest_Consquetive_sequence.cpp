@@ -28,6 +28,7 @@ int main ()
             current++;
         }
         maxlength=max(maxlength,currentlength);
+        currentlength=1;
     }
     cout<<"The maximum Sequence is : "<<maxlength<<endl;
     return 0;
