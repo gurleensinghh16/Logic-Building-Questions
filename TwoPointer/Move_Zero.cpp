@@ -25,7 +25,7 @@ int main ()
             i++;
         }
     }
-    cout<<"Array after removing zero is : ";
+    cout<<"Array after Moving zero is : ";
     for(auto x : arr){
         cout<<x<<" ";
     }
