@@ -11,15 +11,21 @@ int main ()
         cin>>arr[i];
     }
     // Finding container :
-    int area,width,maxArea=0;
-    for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            width=j-i;
-            area=min(arr[i],arr[j])*width;
-            maxArea=max(area,maxArea);
-        }
+    int i=0,j=n-1;
+    int area,width,height=0,maxArea=0;
+   while(i<j){
+    width=j-i;
+    height=min(arr[i],arr[j]);
+    area=height*width;
+    maxArea=max(area,maxArea);
+    if(arr[i]<arr[j]){
+        i++;
     }
+    else{
+        j--;
+    }
+   }
     cout<<"Maximum area is : "<<maxArea<<endl;
     return 0;
 }
-// It is brute force approach :
+// Two Pointer :
