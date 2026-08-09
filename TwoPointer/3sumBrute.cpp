@@ -28,7 +28,7 @@ int main ()
         if(found) break;
     }
     if(!found){
-        cout<<"Target Doesnot exist : ";
+        cout<<"Target Doesnot exist in array : ";
     }
     cout<<endl;
     return 0;
