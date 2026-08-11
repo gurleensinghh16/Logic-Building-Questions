@@ -16,8 +16,11 @@ int main ()
     bool found=false;
     // Finding 3 sum using TwoPointer :
     int i=0;
-    for(i=0;i<n;i++){
-        int left=0,right=n-1;
+    for(i=0;i<n-1;i++){
+        int left=i+1,right=n-1;
+        if(i>0 and arr[i]==arr[i-1]){
+            continue;
+        }
         while(left<right){
         if(arr[i]+arr[left]+arr[right]==target){
             found=true;
