@@ -13,17 +13,17 @@ int main ()
     cout<<"Enter value of k : ";
     cin>>k;
     // Sliding window :
-    int left=0,right=k,maxSum=0,sum=0;
+    int left=0,right=k,minSum=0,sum=0;
     for(int i=0;i<k;i++){
         sum+=arr[i];
     } // calculates first window :
-    maxSum=sum;
+    minSum=sum;
     while(right<n){
         sum=sum-arr[left]+arr[right];
-        maxSum=max(sum,maxSum);
+        minSum=min(sum,minSum);
         left++;
         right++;
     }
-    cout<<"Maximum consecutive sum is : "<<maxSum<<endl;
+    cout<<"Minimum consecutive sum is : "<<minSum<<endl;
     return 0;
 }
