@@ -26,3 +26,4 @@ int main ()
     cout<<"Minimum length is : "<<MaxLength<<endl;
     return 0;
 }
+// Variable window
